@@ -1,0 +1,58 @@
+body {
+  background: url('topneco.jpg') top center;
+  -webkit-background-size: 1188px 664.4px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+form a {
+  margin-left: 10px;
+}
+img {
+  width: 100%;
+}
+.neco {
+  position: relative;
+}
+#neco1 {
+  position: absolute;
+  font-family: Microsoft JhengHei;
+  color:rgb(200, 200, 150);
+  font-size: 3.5em;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+#neco2 {
+  font-family: Microsoft JhengHei;
+  position: absolute;
+  margin: auto;
+  margin-top: 500px;
+  margin-left: 600px;
+}
+#neco3 {
+  font-family: Microsoft JhengHei;
+  position: absolute;
+  margin: auto;
+  margin-top: 500px;
+  margin-left: 900px;
+}
+.f {
+  font-family: Microsoft JhengHei;
+} /*字體放在body不會變只好拿出來*/
+.ladd {
+  margin-top: 20px;
+}
+.ye {
+  color: rgb(180, 210, 230);
+}   /*淺藍的*/
+#whi {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#whi1 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#whi2 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#whi3 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
