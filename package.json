@@ -12,7 +12,8 @@
   "main": "index.js",
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "webpack -p --config webpack.prod.config.js"
   },
   "author": "",
   "license": "ISC",
