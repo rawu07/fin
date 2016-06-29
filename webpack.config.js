@@ -1,19 +1,18 @@
+var webpack = require('webpack');
+var path = require('path');
+
 module.exports = {
   entry: [
     './src/index.js'
   ],
   output: {
-    path: __dirname,
+    path: path.join(__dirname, '/dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },
   devServer: {
-    color:              true,
-    historyApiFallback: true,
-    contentBase:        './',
-    inline:             true,
-    progress:           true,
-    port:               3000
+    contentBase:        './dist',
+    hot:                true
   },
   module: {
     loaders: [{
@@ -21,5 +20,13 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel'
     }]
-  }
+  },
+  resolve: {
+    extensions: ['', '.js']
+  },
+  plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 };

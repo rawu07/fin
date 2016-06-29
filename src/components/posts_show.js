@@ -33,9 +33,9 @@ class PostsShow extends Component {
           onClick={this.onDeleteClick.bind(this)}>
           刪除
         </button>
-        <h4 className="ye f">{post.title}</h4>
-        <h6 className="ye f">Name: {post.categories}</h6>
-        <div className="col-xs-12 ye f"><p>{post.content}</p></div>
+        <h4 className="ye f ladd">{post.title}</h4>
+        <h6 className="ye f ladd">Name: {post.categories}</h6>
+        <div className="col-xs-12 ye f ladd"><p>{post.content}</p></div>
       </div>
     );
   }
